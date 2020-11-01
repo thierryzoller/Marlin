@@ -505,9 +505,10 @@
 //  #define DEFAULT_Kd 114
 
 // ZOLLER CHANGES  
-#define DEFAULT_Kp 13.50
-#define DEFAULT_Ki 0.99
-#define DEFAULT_Kd 45.89
+#define DEFAULT_Kp 26.25
+#define DEFAULT_Ki 3.41
+#define DEFAULT_Kd 50.48
+
   // MakerGear
   //#define DEFAULT_Kp 7.0
   //#define DEFAULT_Ki 0.1
@@ -553,9 +554,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
   //zoller
-  #define DEFAULT_bedKp 33.23
-  #define DEFAULT_bedKi 5.48
-  #define DEFAULT_bedKd 134.29							  
+#define DEFAULT_bedKp 34.90
+#define DEFAULT_bedKi 5.84
+#define DEFAULT_bedKd 139.04
+			  
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
 
@@ -1116,7 +1118,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
