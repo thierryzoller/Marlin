@@ -161,7 +161,7 @@ void print_bilinear_leveling_grid() {
   #define LINEAR_EXTRAPOLATION(E, I) ((E) * 2 - (I))
   float bed_level_virt_coord(const uint8_t x, const uint8_t y) {
     uint8_t ep = 0, ip = 1;
-	if (x > GRID_MAX_POINTS_X + 1 || y > GRID_MAX_POINTS_Y + 1) {
+    if (x > GRID_MAX_POINTS_X + 1 || y > GRID_MAX_POINTS_Y + 1) {
       // The requested point requires extrapolating two points beyond the mesh.
       // These values are only requested for the edges of the mesh, which are always an actual mesh point,
       // and do not require interpolation. When interpolation is not needed, this "Mesh + 2" point is
