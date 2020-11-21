@@ -926,7 +926,7 @@
  */
 #define BLTOUCH
 #define BLTOUCH_SET_5V_MODE
-#define BLTOUCH_HS_MODE
+//#define BLTOUCH_HS_MODE
 
 /**
  * Pressure sensor with a BLTouch-like interface
@@ -1026,7 +1026,7 @@
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
 
 // Feedrate (mm/min) for the "accurate" probe of each point
-#define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 3)
+#define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)
 
 /**
  * Multiple Probing
@@ -1037,7 +1037,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 3
+#define MULTIPLE_PROBING 2
 #define EXTRA_PROBING    1
 
 /**
